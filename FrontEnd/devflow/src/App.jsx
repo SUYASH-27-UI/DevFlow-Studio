@@ -16,8 +16,8 @@ function App() {
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [editTaskTitle, setEditTaskTitle] = useState('');
 
-  const API_PROJECTS = 'http://localhost:8080/api/projects';
-  const API_TASKS = 'http://localhost:8080/api/tasks';
+  const API_PROJECTS = 'https://devflow-studio-production.up.railway.app/api/projects';
+  const API_TASKS = 'https://devflow-studio-production.up.railway.app/api/tasks';
 
   useEffect(() => {
     fetchProjects();
