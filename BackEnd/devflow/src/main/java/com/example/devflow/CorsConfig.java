@@ -10,10 +10,10 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins(
-                        "https://dev-flow-studio-beta.vercel.app", // Aapka Vercel live domain
+                .allowedOriginPatterns(
+                        "https://*.vercel.app",   // Vercel ke saare preview aur production links allow ho jayenge
                         "http://localhost:3000",
-                        "http://localhost:5173"                    // Localtesting ke liye
+                        "http://localhost:5173"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
