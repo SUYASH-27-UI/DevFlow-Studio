@@ -1,0 +1,14 @@
+# Node & React
+node_modules/
+dist/
+build/
+
+# Java & Spring Boot
+target/
+.idea/
+*.class
+*.log
+
+# Environment & OS files
+.env
+.DS_Store
